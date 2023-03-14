@@ -7,64 +7,71 @@
 </head>
 <body>
     <div class="leftImage">
+        <div class="leftBanner">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="head" class="head">
+            </div>
+            <div class="name">Cordee</div>
+        </div>
     </div>
 
     <div class="rightSide">
 
         <div class="dummyText">
         <p>This is a phony form. Please feel free to enter phony details. There is a section for actual phone details. Please enter phony details, for the phone details.</p>
-        <p>Thanks for those phony detail</p>
+        <p>Thanks you for your participation!</p>
         </div>
 
-        <form>
+        <form action="#">
             <div class="formContainer">
-                <p class="formTitle">Fill this baby out</p>
+                <p class="formTitle">Lets do this!</p>
 
                 <div class="input">
-        <form action="example.com/path" method='post'>
-            <label for="first_name">First Name: </label>
-            <input type="text" id="first_name">
-        </form>
+                    <label for="first-name">First Name </label>
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
 
                 <div class="input">
-        <form action="example.com/path" method='post'>
-            <label for="first_name">Last Name </label>
-            <input type="text" id="first_name" >
-        </form>
+                    <label for="last-name">Last Name </label>
+                    <input type="text" id="last-name" name='last-name' required>
+
                 </div>
 
                 <div class="input">
-        <form action="example.com/path" method='post'>
-            <label for="first_name">Email </label>
-            <input type="text" id="first_name">
-        </form>
+                    <label for="user-email">Email </label>
+                    <input type="email" id="user-email" name="user-email" required>
                 </div>
 
                 <div class="input">
-        <form action="example.com/path" method='post'>
-            <label for="first_name">Phone Number </label>
-            <input type="text" id="first_name">
-        </form>
+                    <label for="number">Phone Number </label>
+                    <input type="tel" id="number" name="number">
                 </div>
 
                 <div class="input">
-        <form action="example.com/path" method='post'>
-            <label for="first_name">Password </label>
-            <input type="text" id="first_name">
-        </form>
+                    <label for="user_password">Password </label>
+                    <input type="password" id="user_password" name="user_password" required>
                 </div>
 
                  <div class="input">
-        <form action="example.com/path" method='post'>
-            <label for="first_name">Confirm Password </label>
-            <input type="text" id="first_name">
-        </form>
+                    <label for="user_password">Confirm Password </label>
+                    <input type="password" id="user_password" name="user_password" required>
                 </div>
-
+                
             </div>
+            <div class="rightButton">
+                <button type="submit" class="button">Create Account</button>
+            </div>
+            
+
         </form>
 
+        
+
+        <div class="logIn">
+            <p>Already have an account?</p> 
+            <a href="#">Log in</a>
+            
+        </div>
     </div>
         
 </body>
