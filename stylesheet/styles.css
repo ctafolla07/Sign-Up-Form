@@ -6,7 +6,9 @@ html, body {
     font-family: myFirstFont;
     font-weight:100;
 }
-
+*:focus {
+    outline:none;
+}
 body {
     display: flex; 
     align-items: stretch;
@@ -67,8 +69,11 @@ input {
     min-width: 300px;
     box-sizing: border-box;
 }
-input:focus {
-    border: 1px solid red;
+input:focus:invalid {
+    border: 2px solid rgb(231, 0, 0);
+}
+input:focus:valid {
+    border: 3px solid rgb(158, 255, 155);
 }
 .dummyText {
     display: flex;
@@ -86,7 +91,7 @@ label {
 }
 .formTitle {
     width: 100%;
-    font-size: 23px;
+    font-size: 30px;
 }
 @font-face {
     font-family: myFirstFont;
